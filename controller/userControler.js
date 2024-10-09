@@ -5,6 +5,7 @@ import User from "../models/UserModel.js";
 
 export const getUser = async (req, res) => {
   try {
+    console.log ("test")
     const data = await User.findAll();
     res.json(data);
   } catch (error) {
@@ -14,7 +15,7 @@ export const getUser = async (req, res) => {
 export const createUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
-    const creteData = await Admin.create({ name, email, password });
+    const creteData = await User.create({ name, email, password });
     res.send(creteData);
   } catch (err) {
     res.send(createUser);

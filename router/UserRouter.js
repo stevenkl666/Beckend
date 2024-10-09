@@ -6,7 +6,6 @@ import {
   updateUser,
 } from "../controller/userControler.js";
 const RouterUser = express.Router();
-
 RouterUser.get("/getUser", getUser);
 RouterUser.post("/createUser", createUser);
 RouterUser.put("/updateUser/:id", updateUser);

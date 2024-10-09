@@ -1,6 +1,7 @@
 import Item from "../models/ItemModel.js";
 import User from "../models/UserModel.js";
 import Admin from "../models/adminModels.js";
+import Transaksi from "../models/TransaksiModel.js";
 const createSeeder = async () => {
   const admin = await Admin.create({
     email: "Admin123",
